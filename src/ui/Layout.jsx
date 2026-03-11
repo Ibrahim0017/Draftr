@@ -9,12 +9,12 @@ const Layout = () => {
       {/* Text Content */}
       <div className="max-w-3xl space-y-6">
 
-        <h1 className="text-5xl md:text-6xl font-bold text-black leading-13">
+        <h1 className="text-5xl text-[24px] leading-8 font-bold text-black md:leading-15 md:text-6xl">
           Take your creative workflow 
           to the next level
         </h1>
 
-        <p className="text-lg text-gray-600">
+        <p className="text-[15px] text-gray-600 md:text-lg">
           Supercharge your workflow with powerful design tools and effortless
           collaboration—perfect for freelancers and teams.
         </p>
