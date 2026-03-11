@@ -79,8 +79,8 @@ export default function Footer() {
 
         {/* Divider */}
         <div className="border-t border-gray-800 mt-16 pt-6 text-center text-sm">
-          Designed by <span className="text-white">Webestica</span>, Powered by{" "}
-          <span className="text-white">Framer</span>
+          Designed by <span className="text-white">Shobo Ibrahim</span>, Powered by{" "}
+          <span className="text-white">Ibnet</span>
         </div>
 
       </div>
