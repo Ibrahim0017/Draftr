@@ -1,5 +1,6 @@
 import CardSection from '@/ui/CardSection'
 import FifthSection from '@/ui/FifthSection'
+import Footer from '@/ui/Footer'
 import ForthSection from '@/ui/ForthSection'
 import Header from '@/ui/Header'
 import Hero from '@/ui/Hero'
@@ -18,6 +19,7 @@ const LandingPages = () => {
     <ForthSection/>
     <FifthSection/>
     <Testimonials/>
+    <Footer/>
     </>
   )
 }
