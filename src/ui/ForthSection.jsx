@@ -4,7 +4,7 @@ import image from "../assets/ilnxb8JlQSPXcjRWoZTNLGSFBk.png"
 const ForthSection = () => {
   return (
     <div className="w-full flex justify-center py-20">
-      <div className="w-[90%] max-w-7xl flex flex-col lg:flex-row items-center gap-12">
+      <div className="w-[90%] max-w-7xl flex flex-col lg:flex-row gap-12">
 
         {/* LEFT SIDE */}
         <div className="flex flex-col">
@@ -16,7 +16,7 @@ const ForthSection = () => {
 
             {/* Step 1 */}
             <div className="flex gap-4">
-              <div className="flex items-center bg-gray-200 h-[40px] justify-center text-gray-700 font-semibold px-3  rounded-md">
+              <div className="flex items-center bg-gray-200 h-[34px] justify-center  bg-gradient-to-tr from-purple-500 to-indigo-500 text-white font-semibold px-2  rounded-md">
                 01
               </div>
               <div>
@@ -30,7 +30,7 @@ const ForthSection = () => {
 
             {/* Step 2 */}
             <div className="flex gap-4">
-            <div className="flex items-center bg-gray-200 h-[40px] justify-center text-gray-700 font-semibold px-3  rounded-md">
+            <div className="flex items-center bg-gray-200 h-[34px] justify-center  bg-gradient-to-tr from-purple-500 to-indigo-500 text-white font-semibold px-2  rounded-md">
                 02
               </div>
               <div>
@@ -44,7 +44,7 @@ const ForthSection = () => {
 
             {/* Step 3 */}
             <div className="flex gap-4">
-            <div className="flex items-center bg-gray-200 h-[40px] justify-center text-gray-700 font-semibold px-3  rounded-md">
+            <div className="flex items-center bg-gray-200 h-[34px] justify-center  bg-gradient-to-tr from-purple-500 to-indigo-500 text-white font-semibold px-2  rounded-md">
                 03
               </div>
               <div>
@@ -64,7 +64,7 @@ const ForthSection = () => {
           <div className="w-full h-full rounded-3xl p-6 overflow-hidden">
             <img className="w-full h-full object-cover rounded-4xl" src={image} alt="" />
           </div>
-          
+           
           <div className="">
             
           </div>
