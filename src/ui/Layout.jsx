@@ -4,7 +4,7 @@ import layout from "../assets/layoutImage.png";
 
 const Layout = () => {
   return (
-    <section className="w-full pt-32 bg-gradient-to-b from-[#ffffff] to-[#e0dafe] flex flex-col items-center text-center px-6">
+    <section className="w-full bg-gradient-to-b from-[#ffffff] to-[#e0dafe] flex flex-col items-center text-center px-6">
 
       {/* Text Content */}
       <div className="max-w-3xl space-y-6">
@@ -15,7 +15,7 @@ const Layout = () => {
         </h1>
 
         <p className="text-[15px] text-gray-600 md:text-lg">
-          Supercharge your workflow with powerful design tools and effortless
+          Supercharge your workflow with powerful design tools and <br /> effortless 
           collaboration—perfect for freelancers and teams.
         </p>
 
