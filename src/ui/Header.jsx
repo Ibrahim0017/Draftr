@@ -13,7 +13,7 @@ export default function Header() {
   ]
 
   return (
-    <header className="w-full border-b bg-white fixed top-0">
+    <header className="w-full border-b bg-white fixed top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
         {/* Logo */}
