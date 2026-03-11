@@ -4,6 +4,7 @@ import ForthSection from '@/ui/ForthSection'
 import Header from '@/ui/Header'
 import Hero from '@/ui/Hero'
 import InfiniteCarousel from '@/ui/InfiniteCarousel'
+import Testimonials from '@/ui/Testimonials'
 import React from 'react'
 
 
@@ -16,6 +17,7 @@ const LandingPages = () => {
     <CardSection/>
     <ForthSection/>
     <FifthSection/>
+    <Testimonials/>
     </>
   )
 }
