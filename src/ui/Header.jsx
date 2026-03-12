@@ -1,15 +1,16 @@
 import { useState } from "react"
 import { Menu, X } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export default function Header() {
   const [open, setOpen] = useState(false)
 
   const navLinks = [
-    "About",
-    "Blog",
-    "Changelog",
-    "Contact",
-    "Power-Ups"
+    { name: "About", path: "/about" },
+    { name: "Blog", path: "/blog" },
+    { name: "Changelog", path: "/changelog" },
+    { name: "Contact", path: "/contact" },
+    { name: "Power-Ups", path: "/power-ups" }
   ]
 
   return (
@@ -17,17 +18,21 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
 
         {/* Logo */}
-        <div className="flex items-center gap-2 font-bold text-xl">
+        <Link to="/" className="flex items-center gap-2 font-bold text-xl">
           <div className="w-6 h-6 bg-gradient-to-tr from-purple-500 to-indigo-500 rounded-md"></div>
           Draftr
-        </div>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8 text-gray-600">
           {navLinks.map((link) => (
-            <a key={link} href="#" className="hover:text-black">
-              {link}
-            </a>
+            <Link
+              key={link.name}
+              to={link.path}
+              className="hover:text-black transition"
+            >
+              {link.name}
+            </Link>
           ))}
         </nav>
 
@@ -45,18 +50,23 @@ export default function Header() {
         >
           <Menu size={24} />
         </button>
+
       </div>
 
       {/* Mobile Menu */}
       {open && (
-        <div className="fixed inset-0 bg-white z-70 p-6">
+        <div className="fixed inset-0 bg-white z-50 p-6">
 
           {/* Top Bar */}
           <div className="flex items-center justify-between mb-10">
-            <div className="flex items-center gap-2 font-bold text-xl">
+            <Link
+              to="/"
+              className="flex items-center gap-2 font-bold text-xl"
+              onClick={() => setOpen(false)}
+            >
               <div className="w-6 h-6 bg-gradient-to-tr from-purple-500 to-indigo-500 rounded-md"></div>
               Draftr
-            </div>
+            </Link>
 
             <button
               onClick={() => setOpen(false)}
@@ -69,9 +79,14 @@ export default function Header() {
           {/* Mobile Links */}
           <div className="flex flex-col gap-6 text-lg text-gray-700">
             {navLinks.map((link) => (
-              <a key={link} href="#">
-                {link}
-              </a>
+              <Link
+                key={link.name}
+                to={link.path}
+                onClick={() => setOpen(false)}
+                className="hover:text-black"
+              >
+                {link.name}
+              </Link>
             ))}
           </div>
 
