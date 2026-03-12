@@ -3,6 +3,7 @@ import AboutHero from '@/ui/AboutHero'
 import ImpactSection from '@/ui/ImpactSection'
 import TeamSection from '@/ui/TeamSection'
 import React from 'react'
+import SuccefulProject from '@/ui/succefulProject'
 
 const AboutPage = () => {
   return (
@@ -11,6 +12,7 @@ const AboutPage = () => {
     <AboutHero/>
     <ImpactSection/>
     <WhySection/>
+    <SuccefulProject/>
     <TeamSection/>
     </div>
     </>

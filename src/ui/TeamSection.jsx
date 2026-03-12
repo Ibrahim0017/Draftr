@@ -31,19 +31,19 @@ const TeamSection = () => {
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
 
-          <div data-aos="zoom-in" data-aos-delay="100">
+          <div data-aos="fade-up" data-aos-delay="100">
             <TeamCard image={img1} name="Jane Lin" role="Co-Founder" />
           </div>
 
-          <div data-aos="zoom-in" data-aos-delay="200">
+          <div data-aos="fade-up" data-aos-delay="200">
             <TeamCard image={img2} name="Sofia Mendes" role="Design Lead" />
           </div>
 
-          <div data-aos="zoom-in" data-aos-delay="300">
+          <div data-aos="fade-up" data-aos-delay="300">
             <TeamCard image={img3} name="Liam Chen" role="Marketing & Growth" />
           </div>
 
-          <div data-aos="zoom-in" data-aos-delay="400">
+          <div data-aos="fade-up" data-aos-delay="400">
             <TeamCard image={img4} name="Ethan Ross" role="Lead Engineer" />
           </div>
 

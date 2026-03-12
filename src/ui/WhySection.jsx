@@ -5,7 +5,7 @@ import recentWorkImage from "../assets/RecentworkImage.png";
 
 const WhySection = () => {
   return (
-    <section className="w-full flex justify-center py-16 px-6">
+    <section className="w-full flex justify-center px-6">
       <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-16 items-center">
 
         {/* LEFT SIDE */}
