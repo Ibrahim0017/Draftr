@@ -7,20 +7,20 @@ const Layout = () => {
     <section className="w-full bg-gradient-to-b from-[#ffffff] to-[#e0dafe] flex flex-col items-center text-center px-6">
 
       {/* Text Content */}
-      <div className="max-w-3xl space-y-6">
+      <div className="max-w-3xl space-y-6 flex flex-col items-center">
 
-        <h1 className="text-5xl text-[24px] leading-8 font-bold text-black md:leading-15 md:text-6xl">
+        <h1 className="text-5xl text-[24px] leading-8 font-bold text-black md:leading-15 md:text-6xl " data-aos="fade-up" data-aos-delay="200">
           Take your creative workflow 
           to the next level
         </h1>
 
-        <p className="text-[15px] text-gray-600 md:text-lg">
-          Supercharge your workflow with powerful design tools and <br /> effortless 
-          collaboration—perfect for freelancers and teams.
-        </p>
+        <h2 className="mt-4 text-gray-700 dark:text-gray-300 max-w-[460px]" data-aos="fade-up" data-aos-delay="300">
+        Supercharge your workflow with powerful design tools and
+        effortless collaboration—perfect for freelancers and teams.
+          </h2>
 
         {/* Buttons */}
-        <div className="flex justify-center items-center gap-4 pt-4">
+        <div className="flex justify-center items-center gap-4 pt-4" data-aos="fade-up" data-aos-delay="500">
 
           <button className="px-8 py-4 rounded-full text-white font-semibold bg-gradient-to-r from-purple-600 to-indigo-500 shadow-lg hover:scale-105 transition">
             Get Started
@@ -38,7 +38,7 @@ const Layout = () => {
       </div>
 
       {/* Dashboard Image */}
-      <div className="mt-20 max-w-6xl w-full">
+      <div className="mt-20 max-w-6xl w-full" data-aos="zoom-in-up" data-aos-delay="700">
         <img
           src={layout}
           alt="dashboard"

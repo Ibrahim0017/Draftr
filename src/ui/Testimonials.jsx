@@ -13,7 +13,7 @@ const testimonials = [
   },
   {
     img: avatar2,
-    text: "Before Draftr, we juggled five different tools to manage clients, tasks, and reports. Now it’s all in one place. We launched 3 campaigns faster this quarter than ever before",
+    text: "Before Draft, we juggled five different tools to manage clients, tasks, and reports. Now it’s all in one place. We launched 3 campaigns faster this quarter than ever before.",
     name: "Daniel Moore",
     role: "Design Lead, PixelLab",
   },
@@ -34,7 +34,6 @@ const testimonials = [
 export default function Testimonials() {
   const [active, setActive] = useState(0);
 
-  // Auto change every 4 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setActive((prev) => (prev + 1) % testimonials.length);
@@ -44,14 +43,16 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="py-20">
+    <section data-aos="fade-up" className="py-20">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center px-6">
 
-        <h2 className="text-5xl font-bold">
+        {/* Title */}
+        <h2 className="text-5xl font-bold" data-aos="fade-right">
           Loved by designers & teams
         </h2>
 
-        <div>
+        <div data-aos="fade-left">
+
           {/* Avatars */}
           <div className="flex mb-6">
             {testimonials.map((item, index) => (
@@ -69,7 +70,7 @@ export default function Testimonials() {
             ))}
           </div>
 
-          {/* Text */}
+          {/* Testimonial Text */}
           <p className="text-lg text-gray-700 mb-4 transition-all duration-500">
             "{testimonials[active].text}"
           </p>
@@ -77,8 +78,8 @@ export default function Testimonials() {
           <p className="text-sm text-gray-500">
             {testimonials[active].name}, {testimonials[active].role}
           </p>
-        </div>
 
+        </div>
       </div>
     </section>
   );

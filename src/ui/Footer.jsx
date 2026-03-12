@@ -15,7 +15,7 @@ export default function Footer() {
               Draftr
             </div>
 
-            <div>
+            <div data-aos="fade-up" data-aos-delay="100">
               <p className="mb-4">Follow us on:</p>
 
               <div className="flex items-center gap-6 text-xl text-gray-300">
@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4">
+          <div className="space-y-4" data-aos="fade-left" data-aos-delay="400">
             <h3 className="text-white text-lg font-semibold">Quick Links</h3>
 
             <ul className="space-y-3">
@@ -55,7 +55,7 @@ export default function Footer() {
           </div>
 
           {/* All Pages */}
-          <div className="space-y-4">
+          <div className="space-y-4 " data-aos="fade-left" data-aos-delay="500">
             <h3 className="text-white text-lg font-semibold">All Pages</h3>
 
             <ul className="space-y-3">

@@ -10,14 +10,14 @@ const HeroPicture = () => {
       <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-10 w-full max-w-[1200px]">
 
         {/* LEFT PANEL */}
-        <div className="bg-[#FFFFFF] rounded-[20px] md:rounded-[40px] p-3 shadow-lg">
+        <div className="bg-[#FFFFFF] rounded-[20px] md:rounded-[40px] p-3 shadow-lg" data-aos="zoom-in-up" data-aos-delay="400" >
           
           <img src={leftImage} alt="" />
 
         </div>
 
         {/* RIGHT PANEL */}
-        <div className="bg-[#FFFFFF] rounded-[20px] md:rounded-[40px] p-3 flex flex-col justify-between shadow-lg">
+        <div className="bg-[#FFFFFF] rounded-[20px] md:rounded-[40px] p-3 flex flex-col justify-between shadow-lg" data-aos="zoom-in-up" data-aos-delay="500">
         <div className="bg-[#FFFFFF] rounded-[40px] ">
           
           <img src={rightImage} alt="" />
